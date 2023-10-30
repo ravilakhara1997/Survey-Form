@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+    <div>
+        <!-- this nav bar. we add tow navbar navbarright and navbarleft  -->
+        <div class="navbar">
+            <!-- this for right side nav bar -->
+            <div class="navbarright">
+                <div class="logo">
+                    <img src="codepen.jpg" alt="codepen">
+                </div>
+                <div>
+                    <a>A pen by <a href="https://codepen.io/freeCodeCamp">freeCodeCamp.org</a></a>
+                    <h1>FCC : Survey Form</h1>
+                </div>
+            </div>
+            <!-- this for left side nav bar -->
+            <div class="navbarleft">
+                <i class="fa-solid fa-heart" style="color: #ffffff;"></i>
+                <a>View Source Code</a>
+                <a>Sign up</a>
+                <a>Log in</a>
+            </div>
+        </div>
+        <div class="container">
+            <h1>freeCodeCamp Survey Form</h1>
+            <p style="font-style: italic;">Thank you for taking the time to help us improve the platform</p>
+            <div class="form">
+                <label for="name">Name</label><br>
+                <input type="text" placeholder="Enter your Name" required><br>
+                <label for="email">Email Id</label><br>
+                <input type="email" placeholder="Enter your Email Id" required><br>
+                <label for="age">Age (Optional)</label><br>
+                <!-- set minimum age 18 -->
+                <input type="number" placeholder="Entee your age" min="18"><br>
+                <label for="role">Which option best describes your current role?</label><br>
+                <select name="drop-down" id="drop-down">
+                    <option>select current role</option>
+                    <option>Student</option>
+                    <option>Full time Job</option>
+                    <option>Full time learner</option>
+                    <option>Prefer not say</option>
+                    <option>Other</option>
+                </select><br>
+                <label for="recommend">Would you recommend freeCodeCamp to a friend?</label><br>
+                <!-- in select one than give the input type radio and name recommend -->
+                <input type="radio" name="recommend"> Definitely <br>
+                <input type="radio" name="recommend"> May be <br>
+                <input type="radio" name="recommend"> Not Sure <br>
+                <select name="drop-down" id="drop-down">
+                    <option>Selection an option</option>
+                    <option>Challenges</option>
+                    <option>Projescts</option>
+                    <option>Community</option>
+                    <option>Open Source</option>
+                    <option>Other</option>
+                </select><br>
+                <label for="like">What would you like to see improved? (Check all that apply)</label><br>
+                <!-- This for multipal choise than give the type checkbox -->
+                <input type="checkbox">Front-end Projects <br>
+                <input type="checkbox">Back-end Projects <br>
+                <input type="checkbox">Data Visualization <br>
+                <input type="checkbox">Challenges <br>
+                <input type="checkbox">Open Source Community <br>
+                <input type="checkbox">Gitter help rooms <br>
+                <input type="checkbox">Videos <br>
+                <input type="checkbox">City Meetups <br>
+                <input type="checkbox">Wiki <br>
+                <input type="checkbox">Forum <br>
+                <input type="checkbox">Additional Courses <br>
+                <label for="comments">Any comments or suggestions?</label><br>
+                <textarea rows="5" cols="50"></textarea><br>
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
